@@ -1,6 +1,6 @@
 /* Basic Style */
 
-body {
+.page {
     background-color: #f8f8f8;
     color: #333;
     font-family: Lato, sans-serif;
@@ -111,7 +111,7 @@ label[for="new-task"] {
     margin: 0 0 20px;
 }
 
-input#new-task {
+#new-task {
     width: 318px;
 }
 
@@ -127,22 +127,22 @@ li {
     align-items: center;
 }
 
-li>* {
+li {
     vertical-align: middle;
 }
 
-li>input[type="checkbox"] {
+input[type="checkbox"] {
     margin: 0 10px;
 }
 
-li>label {
+label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
     width: 226px;
 }
 
-li>input[type="text"] {
+input[type="text"] {
     width: 226px
 }
 
@@ -159,22 +159,22 @@ button.delete img:hover {
 
 /* Completed */
 
-ul#completed-tasks label {
+completed-tasks label {
     text-decoration: line-through color #888;
 }
 
 
 /* Edit Task */
 
-ul li input[type=text] {
+input[type=text] {
     display: none
 }
 
-ul li.edit-mode input[type=text] {
+.edit-mode input[type=text] {
     display: inline-block;
     width: 224px
 }
 
-ul li.edit-mode label {
+.edit-mode label {
     display: none;
 }
